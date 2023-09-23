@@ -1,14 +1,22 @@
-on: pull_request_review
 name: Add "approved" label when approved
+
+on:
+  pull_request_review:
+    types:
+      - submitted
+
 jobs:
   add_label:
     name: Add "approved" label when approved
     runs-on: ubuntu-latest
     steps:
-    - name: Add "approved" label when approved
-      uses: pullreminders/label-when-approved-action@master
-      env:
-        APPROVALS: "1"
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        ADD_LABEL: "approved"
-        REMOVE_LABEL: ""
+      - name: Check for approval
+        id: check_approval
+        run: echo "::set-output name=approved::${{ github.event.review.state == 'approved' }}"
+        
+      - name: Add "approved" label
+        if: steps.check_approval.outputs.approved == 'true'
+        run: |
+          echo "Adding 'approved' label"
+          echo "approved" >> labels.txt
+          gh pr edit ${{ github.event.pull_request.number }} --add-labels labels.txt
