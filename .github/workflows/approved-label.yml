@@ -23,5 +23,4 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "Adding 'approved' label"
-          cd $GITHUB_WORKSPACE  # Set the working directory to the root of the repository
           gh pr edit ${{ github.event.pull_request.number }} --add-label approved
