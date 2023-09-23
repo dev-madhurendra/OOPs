@@ -10,7 +10,6 @@ on:
     paths:
       - "C++/**"
       - ".github/workflows/codeql.yml"
-        
     branches: [main]
   schedule:
     #        ┌───────────── minute (0 - 59)
