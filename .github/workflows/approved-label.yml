@@ -10,6 +10,9 @@ jobs:
     name: Add "approved" label when approved
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2  # Make sure to use the latest version
+
       - name: Check for approval
         id: check_approval
         run: echo "::set-output name=approved::${{ github.event.review.state == 'approved' }}"
@@ -20,4 +23,5 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           echo "Adding 'approved' label"
+          cd $GITHUB_WORKSPACE  # Set the working directory to the root of the repository
           gh pr edit ${{ github.event.pull_request.number }} --add-label approved
