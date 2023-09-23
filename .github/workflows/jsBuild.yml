@@ -4,13 +4,8 @@ on:
   push:
     paths:
       - 'JavaScript/**'  # Include the JavaScript folder and its subdirectories
-      - 'TypeScript/**'   # Include the TypeScript folder and its subdirectories
       - '.github/workflows/jsBuild.yml'
   pull_request:
-    paths:
-      - 'JavaScript/**'  # Include the JavaScript folder and its subdirectories
-      - 'TypeScript/**'   # Include the TypeScript folder and its subdirectories
-      - '.github/workflows/jsBuild.yml'
           
 
 jobs:
