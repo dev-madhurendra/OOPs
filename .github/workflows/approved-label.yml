@@ -1,14 +1,24 @@
-on: pull_request_review
-name: Label approved pull requests
+name: Add "approved" label when approved
+
+on:
+  pull_request_review:
+    types:
+      - submitted
+
 jobs:
-  labelWhenApproved:
-    name: Label when approved
+  add_label:
+    name: Add "approved" label when approved
     runs-on: ubuntu-latest
+
     steps:
-    - name: Label when approved
-      uses: abinoda/label-when-approved-action@1.0.5
-      env:
-        APPROVALS: "2"
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        ADD_LABEL: "approved"
-        REMOVE_LABEL: "awaiting%20review"
+      - name: Check for approval
+        id: check_approval
+        run: echo "::set-output name=approved::${{ github.event.review.state == 'approved' }}"
+      
+      - name: Add "approved" label
+        if: steps.check_approval.outputs.approved == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Adding 'approved' label"
+          gh pr edit ${{ github.event.pull_request.number }} --add-label approved

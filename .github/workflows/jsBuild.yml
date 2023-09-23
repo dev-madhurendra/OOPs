@@ -1,23 +1,46 @@
-name: Build
+name: Continuous Integration for JS
+
 on:
   push:
-    branches:
-      - main
     paths:
-      - "JavaScript/**"
-      - ".github/workflows/jsBuild.yml"  
+      - 'JavaScript/**'  # Include the JavaScript folder and its subdirectories
+      - '.github/workflows/jsBuild.yml'
   pull_request:
-    types: [opened, synchronize, reopened]
+          
+
 jobs:
-  sonarcloud:
-    name: SonarCloud
+  build:
+    name: Code style and tests
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
         with:
-          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
-      - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          node-version: 16
+          cache: npm
+
+      - name: 📦 Install dependencies
+        run: npm install
+
+      - name: 🧪 Run all tests
+        if: ${{ github.event_name == 'push' }}
+        run: npm run test
+
+      - name: 🧪 Run tests for changed files only
+        if: ${{ github.event_name == 'pull_request' }}
+        run: npm run test-changed
+
+      - name: 💄 Code style
+        run: npm run style
+
+  codespell:
+    name: Check for spelling errors
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: codespell-project/actions-codespell@master
+        with:
+          # file types to ignore
+          skip: "*.json,*.yml,DIRECTORY.md"
+          ignore_words_list: "ba,esy,yse,falsy"
