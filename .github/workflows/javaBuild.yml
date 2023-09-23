@@ -1,0 +1,24 @@
+name: Clang format linter
+
+on:
+  push:
+    paths:
+      - 'Java/**'  # This restricts the workflow to changes in the 'Java' folder
+      - '.github/workflows/javaBuild.yml'
+  pull_request:
+    paths:
+      - 'Java/**'  # This restricts the workflow to changes in the 'Java' folder
+      - '.github/workflows/javaBuild.yml'
+      
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DoozyX/clang-format-lint-action@v0.16.2
+        with:
+          source: './src'
+          extensions: 'java'
+          clangFormatVersion: 16
