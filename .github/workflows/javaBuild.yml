@@ -1,4 +1,4 @@
-name: Clang format linter
+name: Clang format linter for Java
 
 on:
   push:
@@ -19,6 +19,6 @@ jobs:
       - uses: actions/checkout@v4
       - uses: DoozyX/clang-format-lint-action@v0.16.2
         with:
-          source: './src'
+          source: '../Java'
           extensions: 'java'
           clangFormatVersion: 16
