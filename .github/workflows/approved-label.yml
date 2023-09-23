@@ -18,5 +18,4 @@ jobs:
         if: steps.check_approval.outputs.approved == 'true'
         run: |
           echo "Adding 'approved' label"
-          echo "approved" >> labels.txt
-          gh pr edit ${{ github.event.pull_request.number }} --add-labels labels.txt
+          gh pr edit ${{ github.event.pull_request.number }} --add-label approved
