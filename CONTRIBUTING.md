@@ -10,7 +10,9 @@ Please take a moment to read the following guidelines to understand how you can 
 - [How Can I Contribute?](#how-can-i-contribute)
 - [Reporting Bugs](#reporting-bugs)
 - [Suggesting Enhancements](#suggesting-enhancements)
+- [One Concept per PR](#one-concept-per-pr)
 - [Pull Request Guidelines](#pull-request-guidelines)
+- [Branch Naming Conventions](#branch-naming-convention)
 - [Development Setup](#development-setup)
 - [License](#license)
 
@@ -72,6 +74,35 @@ We welcome contributions in the form of pull requests (PRs). Here are some guide
 8. **Squash Commits**: If you make multiple commits, consider squashing them into a single commit with a clear and concise commit message.
 
 9. **License**: Ensure that your contributions comply with the project's license.
+
+## One Concept per PR
+
+We follow a strict guideline in this project: **One Concept per Pull Request (PR)**. When contributing code or changes, please ensure that each PR focuses on a single concept, feature, or bug fix.
+
+This guideline helps maintain code clarity, simplifies code reviews, and ensures that each PR is well-contained and easy to understand. It also allows for more straightforward testing and troubleshooting.
+
+When creating a PR, make sure to:
+
+- Clearly describe the concept, feature, or fix addressed by the PR.
+- Avoid bundling unrelated changes in a single PR.
+- Keep the scope of the PR limited to the chosen concept.
+
+By following this guideline, we can maintain a clean and organized codebase that is easier to maintain and collaborate on.
+
+## Branch Naming Convention
+
+In this project, we follow a specific branch naming convention to organize code related to different programming languages and Object-Oriented Programming (OOP) concepts. Branch names should follow the format:
+
+- `[DirName]`: The name of the directory or programming language you are working with. For example, `Java`, `Cpp`, `Python`, etc.
+- `[Oops-Concept]`: The specific OOP concept you are exploring or implementing. For example, `Inheritance`, `Polymorphism`, `Encapsulation`, etc.
+
+Here are some examples of valid branch names:
+
+- `Java_Multiple-Inheritance`
+- `Cpp_Class`
+- `Python_Polymorphism`
+
+By following this naming convention, it becomes easier to track and manage branches related to different programming languages and OOP concepts within the project.
 
 ## Development Setup
 
