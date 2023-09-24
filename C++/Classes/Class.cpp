@@ -1,3 +1,5 @@
+#include<iostream>
+using namespace std;
 /*
 	Class : 
 		- A class is a blueprint or template for creating objects (instances).
