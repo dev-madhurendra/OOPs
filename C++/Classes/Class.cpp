@@ -8,6 +8,8 @@
 */
 
 // Here's the basic syntax for defining a class in C++:
+#include<iostream>
+using namespace std;
 
 class Person {
 
@@ -25,7 +27,8 @@ public:
 
     // Public member functions
     void introduce() {
-        cout << "Hello, I'm " << name << " and I'm " << age << " years old." << endl;
+        cout<<"hello world";
+        // cout << "Hello, I'm " << name << " and I'm " << age << " years old." << endl;
     }
 };
 
