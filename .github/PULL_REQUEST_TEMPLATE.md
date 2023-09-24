@@ -1,7 +1,7 @@
 ### Describe your change
 
 - [ ] Add a concept ?
-- [ ] Fix a bug or typo in an existing algorithm?
+- [ ] Fix a bug or typo in an existing concept ?
 - [ ] Documentation change?
 
 ### Checklist
