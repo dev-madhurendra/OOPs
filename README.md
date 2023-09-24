@@ -44,6 +44,15 @@ Here are some examples of valid branch names:
 
 By following this naming convention, it becomes easier to track and manage branches related to different programming languages and OOP concepts within the project.
 
+<h3 align="center">Connect with me:</h3>
+<p align="center">
+<a href="https://twitter.com/devmadhurendra" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="devmadhurendra" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/dev-madhurendra" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="dev-madhurendra" height="30" width="40" /></a>
+<a href="https://instagram.com/dev.madhurendra" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="dev.madhurendra" height="30" width="40" /></a>
+<a href="https://www.youtube.com/c/dev.madhurendra" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="dev.madhurendra" height="30" width="40" /></a>
+<a href="https://discord.gg/https://discord.gg/bUHuNRq7" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="https://discord.gg/bUHuNRq7" height="30" width="40" /></a>
+</p>
+
 ## Thanks to all the contributors ❤️
 
 <a href = "https://github.com/dev-madhurendra/OOPs/graphs/contributors">
