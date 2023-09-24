@@ -7,7 +7,7 @@
 '''
 
 
-# Here we define a new class named "First"
+# Here we define a new class named "Bike"
 class Bike:
     # This is data member/attribute of class.
     # This will get attached with every object of this class.
