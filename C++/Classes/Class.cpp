@@ -1,45 +1,36 @@
-#include<bits/stdc++.h>
-using namespace std;
 /*
-Class -> 
-       	1.class is a blueprint for creating objects.
-
-       	2.class consist of data member and member function.
-
-	  	3. A Class is a user-defined data-type which has data members and member functions.
-
-		4.Data members are the data variables and member functions 
-		  are the functions used to manipulate these variables and together 
-		  these data members and member functions define the properties and behaviour 
-		  of the objects in a Class.
-
-		5.In the above example of class Car, the data member will be speed limit, 
-		   mileage etc and member functions can apply brakes, increase speed etc.
-
-Object ->
-       	1.Object is instance of class.
-
-       	2.Object is real world entity.
-
-		3.When a class is defined, no memory is allocated but when 
-		 it is instantiated (i.e. an object is created) memory is allocated.
+	Class : 
+		- A class is a blueprint or template for creating objects (instances).
+		- It defines the structure and behavior of objects that will be created based on it.
+		- A class encapsulates data (attributes) and functions (methods) that operate on that data into a single unit.
+		- A class is a user-defined data type. It allows you to define a new data type based on the structure and behavior you define within the class. 
 
 */
 
-//class
-class Dog{
-	// data member
-	string name = "Pitbull";
+// Here's the basic syntax for defining a class in C++:
+
+class Person {
+
+	// data members
+private:
+    string name;
+    int age;
+
 public:
-	// member fucntion
-	void run(){
-		cout << name << " is running. " << endl;
-	}
+    // Constructor
+    Person(string n, int a) {
+        name = n;
+        age = a;
+    }
+
+    // Public member functions
+    void introduce() {
+        cout << "Hello, I'm " << name << " and I'm " << age << " years old." << endl;
+    }
 };
-int main(){
-	Dog dg;// dg is object of class Dog
 
-	dg.run();// member function run() called of class Dog
-
-	return 0;
+int main() {
+    Person alice("Alice", 30);
+    alice.introduce();  // Output: Hello, I'm Alice and I'm 30 years old.
+    return 0;
 }
