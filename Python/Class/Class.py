@@ -10,10 +10,10 @@
 
 
 # Here we define a new class named "First"
-class First:
+class Bike:
     # This is data member/attribute of class.
     # This will get attached with every object of this class.
-    b = 32
+    speed = 32
 
     # This is member function of this class. 
     # In member function first parameter always reference to the object through which this member function is called.
@@ -21,22 +21,22 @@ class First:
     def showVariable(self):
 
         # for accessing data members of object we need to use reference of that object
-        print(self.b) 
-        print(self.a)
+        print(self.speed) 
+        print(self.mielage)
 
 
 # This is how we create object of Class.
-obj1 = First()
+obj1 = Bike()
 
 # We can also define some attribute of object like this. This attribute only belongs to only this object.
-obj1.a = 13
+obj1.mielage = 13
 
 # Here we call member function of class
 obj1.showVariable()
 
 
 # Here we created one more object of class First
-obj2 = First()
+obj2 = Bike()
 
 '''
 When we call this function of class using object "obj2" then you will get error because
