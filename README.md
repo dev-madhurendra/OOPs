@@ -4,6 +4,11 @@ This repository is your one-stop resource for exploring Object-Oriented Programm
 
 <img width="100%" src="https://github.com/dev-madhurendra/OOPs/assets/68775519/2724cdd3-6e3d-4802-a72a-c84b47c8976c" />
 
+<div align="center">
+
+  [![Discord chat][chat]][discord-server]
+
+</div>
 
 Before contributing to this repository, make sure to read our [Contribution Guidelines](CONTRIBUTING.md). Our maintainers will guide you through how to make your contribution properly if you make any mistakes. The names of the maintainers of this repository are listed in the [CODEOWNERS file](.github/CODEOWNERS).
 
@@ -44,3 +49,10 @@ By following this naming convention, it becomes easier to track and manage branc
 <a href = "https://github.com/dev-madhurendra/OOPs/graphs/contributors">
   <img src = "https://contrib.rocks/image?repo=dev-madhurendra/OOPs"/>
 </a>
+
+
+<!-- Badge Links -->
+[chat]: https://img.shields.io/discord/808045925556682782.svg?logo=discord&colorB=7289DA
+
+<!-- External Links -->
+[discord-server]: https://discord.gg/bUHuNRq7
