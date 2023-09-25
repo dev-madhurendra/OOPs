@@ -3,7 +3,6 @@
 using namespace std;
 
 /*
-        Resource : https://www.geeksforgeeks.org/constructor-overloading-java/
         
         Overloaded Costructor : 
             1.constructor  overloading is when we overload default constructor and 
@@ -77,21 +76,3 @@ int main() {
 
     return 0;
 }
-/*
-    Output will be : 
-        Student 1:
-        Name: Unknown
-        Roll Number: 0
-        Age: 0 years
-
-        Student 2:
-        Name: Alice
-        Roll Number: 101
-        Age: 0 years
-
-        Student 3:
-        Name: Bob
-        Roll Number: 102
-        Age: 18 years
-
-*/
