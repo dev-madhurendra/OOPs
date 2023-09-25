@@ -1,9 +1,11 @@
 '''
-    1- Class is a user-define data type. It consist of data members and member function.
-    2- Class gives the blueprint structure that how the memory will get allocated when object of class get created.
-    3- In python for creating class we use keyword "class" along with the name of class what you want.
-    1- Object is a real world entity which used to access class functionality.
-    2- Memory gets allocated only when object get created.
+    Class : 
+        1- Class is a user-define data type. It consist of data members and member function.
+        2- Class gives the blueprint structure that how the memory will get allocated when object of class get created.
+        3- In python for creating class we use keyword "class" along with the name of class what you want.
+    Object :
+        1- Object is a real world entity which used to access class functionality.
+        2- Memory gets allocated only when object get created.
 '''
 
 
