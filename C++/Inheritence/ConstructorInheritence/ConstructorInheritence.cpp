@@ -54,10 +54,3 @@ int main() {
 
     return 0;
 }
-/*
-    output will be:
-        Base class constructor called with x = 10
-        Derived class constructor called with y = 20
-        Value of x in Base class: 10
-        Value of y in Derived class: 20
-*/
