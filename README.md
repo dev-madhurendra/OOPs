@@ -2,7 +2,8 @@
 
 This repository is your one-stop resource for exploring Object-Oriented Programming (OOP) concepts in different programming languages.
 
-<img width="100%" src="https://github.com/dev-madhurendra/OOPs/assets/68775519/2724cdd3-6e3d-4802-a72a-c84b47c8976c" />
+![OOPs](https://github.com/dev-madhurendra/OOPs/assets/68775519/89bfad58-2511-433c-b29e-667ce56cf6be)
+
 
 <div align="center">
 
