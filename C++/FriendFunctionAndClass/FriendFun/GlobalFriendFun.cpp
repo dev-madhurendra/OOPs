@@ -3,7 +3,6 @@ using namespace std;
 
 /*
 
-    Resource link : https://www.geeksforgeeks.org/friend-class-function-cpp/
 
     Friend Function
 
@@ -56,9 +55,3 @@ int main() {
     return 0;
 }
 
-/*
-    Output will be :
-        Name: Alice
-        Age: 30 years
-        Address: 123 Main St
-*/

@@ -2,7 +2,6 @@
 using namespace std;
 
 /*
-    Resource link : https://www.geeksforgeeks.org/friend-class-function-cpp/
 
     Friend Class :
         A friend class can access private and protected members of other classes 

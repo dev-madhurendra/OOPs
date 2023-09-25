@@ -3,8 +3,6 @@ using namespace std;
 
 /*
 
-    Resource link : https://www.geeksforgeeks.org/friend-class-function-cpp/
-
     Friend Function
 
         Like a friend class, a friend function can be granted special access to 
@@ -75,10 +73,3 @@ int main() {
 
     return 0;
 }
-/*
-    Output will be : 
-        Hello, my name is Alice.
-        I am 30 years old.
-        I live at 123 Main St.
-
-*/

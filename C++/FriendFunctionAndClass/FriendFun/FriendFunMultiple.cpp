@@ -45,10 +45,3 @@ int main() {
 
     return 0;
 }
-
-/*
-    Output will be
-        Today's Weather Report:
-        Temperature: 28 degrees Celsius
-        Humidity: 60%
-*/
